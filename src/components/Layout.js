@@ -9,7 +9,7 @@ import { withPrefix } from "gatsby";
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen sm:px-5">
       <Helmet>
         <html lang="en" />
         <title>{title}</title>

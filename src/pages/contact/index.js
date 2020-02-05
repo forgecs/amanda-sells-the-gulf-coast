@@ -36,14 +36,14 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="bg-black pt-10">
+        <section className="bg-warm-grey-050 pt-10">
           <div className="flex flex-col items-center">
-            <h1 className="font-bold text-blue-grey-200 text-2xl sm:text-4xl">
+            <h1 className="font-bold text-warm-grey-200 text-2xl sm:text-4xl">
               Contact
             </h1>
             <div className="w-full max-w-xs sm:max-w-sm px-4 pb-16 mt-10">
               <form
-                className="bg-black border border-blue-grey-900 rounded px-8 pt-6 pb-8"
+                className="bg-warm-grey-050 border border-warm-grey-900 rounded px-8 pt-6 pb-8"
                 name="contact"
                 method="post"
                 action="/contact/thanks/"

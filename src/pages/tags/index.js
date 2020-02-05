@@ -13,10 +13,10 @@ const TagsPage = ({
   }
 }) => (
   <Layout>
-    <section className="bg-black">
+    <section className="bg-warm-grey-050">
       <Helmet title={`Tags | ${title}`} />
       <div className="max-w-xl mx-auto px-10 py-16">
-        <h1 className="text-blue-grey-200 text-2xl sm:text-3xl font-semibold">Tags</h1>
+        <h1 className="text-warm-grey-200 text-2xl sm:text-3xl font-semibold">Tags</h1>
         <ul className="font-semibold text-cyan-500 mt-10">
           {group.map(tag => (
             <li key={tag.fieldValue}>

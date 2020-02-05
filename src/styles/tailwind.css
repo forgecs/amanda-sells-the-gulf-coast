@@ -23,7 +23,7 @@
 }
 
 .about strong {
-  @apply text-blue-grey-200 font-bold;
+  @apply text-warm-grey-200 font-bold;
 }
 
 .about a {
@@ -35,11 +35,11 @@
 }
 
 .about h2 {
-  @apply leading-tight text-xl font-bold text-blue-grey-200 mb-2 mt-10;
+  @apply leading-tight text-xl font-bold text-warm-grey-200 mb-2 mt-10;
 }
 
 .about h3 {
-  @apply leading-tight text-lg font-bold text-blue-grey-200 mt-8 -mb-2;
+  @apply leading-tight text-lg font-bold text-warm-grey-200 mt-8 -mb-2;
 }
 
 .about code {
@@ -47,7 +47,7 @@
 }
 
 .about pre code {
-  @apply block bg-black p-4 rounded;
+  @apply block bg-warm-grey-050 p-4 rounded;
 }
 
 .about blockquote {
@@ -83,7 +83,7 @@
 }
 
 .markdown strong {
-  @apply text-blue-grey-200 font-bold;
+  @apply text-warm-grey-200 font-bold;
 }
 
 .markdown a {
@@ -95,11 +95,11 @@
 }
 
 .markdown h2 {
-  @apply leading-tight text-xl font-bold text-blue-grey-200 mb-2 mt-10;
+  @apply leading-tight text-xl font-bold text-warm-grey-200 mb-2 mt-10;
 }
 
 .markdown h3 {
-  @apply leading-tight text-lg font-bold text-blue-grey-200 mt-8 -mb-2;
+  @apply leading-tight text-lg font-bold text-warm-grey-200 mt-8 -mb-2;
 }
 
 .markdown code {
@@ -107,7 +107,7 @@
 }
 
 .markdown pre code {
-  @apply block bg-black p-4 rounded;
+  @apply block bg-warm-grey-050 p-4 rounded;
 }
 
 .markdown blockquote {

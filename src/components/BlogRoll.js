@@ -9,11 +9,11 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="flex justify-center flex-wrap max-w-4xl pb-16">
+      <div className="flex justify-center flex-wrap max-w-4xl pb-12">
         {posts &&
           posts.map(({ node: post }) => (
             <div
-              className="flex-grow max-w-sm border border-blue-grey-900 rounded shadow-lg mt-10 mx-5"
+              className="flex-grow max-w-sm shadow-lg mt-10 mx-5"
               key={post.id}
             >
               <article
@@ -34,23 +34,23 @@ class BlogRoll extends React.Component {
                   ) : null}
                   <p className="flex items-start flex-col px-4 py-6">
                     <Link
-                      className="font-bold text-cyan-400 hover:text-cyan-600"
+                      className="text-cyan-400 uppercase hover:bg-warm-grey-100 px-2 py-1"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
                     </Link>
                     {/* <span> &bull; </span> */}
-                    <span className="text-blue-grey-200">
+                    <span className="text-warm-grey-800 px-2">
                       {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
-                <p className="text-blue-grey-200 px-4 pb-8">
+                <p className="text-warm-grey-800 px-4 pb-8">
                   {post.excerpt}
                   <br />
                   <br />
                   <Link
-                    className="font-semibold text-cyan-700 px-4 py-2 rounded border-2 border-cyan-400 hover:bg-cyan-400 hover:text-blue-grey-100"
+                    className="font-thin text-cyan-700 px-4 py-2 border border-cyan-400 hover:bg-cyan-400 hover:text-warm-grey-050"
                     to={post.fields.slug}
                   >
                     Keep Reading →

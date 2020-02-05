@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Excellent Tech Solutions",
+    title: "Amanda Sells the Gulf Coast",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution."
+      "Amanda Landry's personal site."
   },
   plugins: [
     "gatsby-plugin-sharp", // Must be listed first

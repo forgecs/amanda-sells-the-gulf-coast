@@ -24,10 +24,10 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="bg-black">
+        <section className="bg-warm-grey-050">
           <Helmet title={`${tag} | ${title}`} />
           <div className="max-w-xl px-4 py-16 mx-auto">
-            <h3 className="text-blue-grey-200 text-lg sm:text-3xl font-semibold">{tagHeader}</h3>
+            <h3 className="text-warm-grey-200 text-lg sm:text-3xl font-semibold">{tagHeader}</h3>
             <ul className="mt-10">{postLinks}</ul>
             <p className="mt-10">
               <Link

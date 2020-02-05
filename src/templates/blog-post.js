@@ -19,7 +19,7 @@ export const BlogPostTemplate = ({
   return (
     <section>
       {helmet || ''}
-      <div className="markdown text-blue-grey-200 bg-black">
+      <div className="markdown text-warm-grey-200 bg-warm-grey-050">
         <div className="columns">
           <div className=" max-w-xl px-4 mx-auto py-16">
             <h1 className="font-bold text-2xl tracking-wide">

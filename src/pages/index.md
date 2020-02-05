@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: Website Title
-image: /img/home-jumbotron.jpg
+title: Amanda Sells The Gulf Coast
+image: /img/gulf-breeze-1.jpg
 heading: Website Heading
 subheading: Website Subheading
 mainpitch:

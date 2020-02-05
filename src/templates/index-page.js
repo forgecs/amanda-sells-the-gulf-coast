@@ -7,6 +7,7 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import RealtorCard from "../components/RealtorCard";
 
+import gulfShores from "../img/gulf-shores-1.jpg"
 import gulfBreeze from "../img/gulf-breeze-1.jpg";
 import gulfBreeze2 from "../img/gulf-breeze-2.jpg";
 import sunset from "../img/sunset.jpg";
@@ -25,17 +26,17 @@ export const IndexPageTemplate = ({
     <section
       className="bg-center bg-cover"
       style={{
-        backgroundImage: `linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)), url(${
+        backgroundImage: `linear-gradient(to right bottom, rgba(255,255,255, 0.2), rgba(255,255,255, 0.2)), url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        height: `26rem`
+        height: `28rem`
       }}
     >
-      <div className="h-full flex flex-col justify-center items-center">
-        <h1 className="text-warm-grey-050 text-3xl sm:text-5xl font-thin uppercase tracking-loose  px-4 py-2">
+      <div className="h-full flex flex-col justify-center items-center text-center">
+        <h1 className="text-warm-grey-700 text-2xl sm:text-3xl lg:text-5xl font-thin uppercase tracking-tight  px-10 py-2">
           {title}
         </h1>
-        <h3 className="text-warm-grey-050 text-lg sm:text-xl px-2 py-1 mt-5">
+        <h3 className="text-warm-grey-700 text-lg sm:text-xl px-2 py-1 mt-5">
           {subheading}
         </h3>
       </div>
@@ -63,7 +64,7 @@ export const IndexPageTemplate = ({
           titleOne="Featured"
           titleTwo="Properties"
           button="Search Now"
-          image={gulfBreeze}
+          image={gulfShores}
         />
 
         <RealtorCard

@@ -6,7 +6,7 @@ function RealtorCard({ titleOne, titleTwo, button, image }) {
   return (
     <div className="sm:px-5 sm:w-1/2 py-10">
       <div
-        className="bg-cover bg-center flex justify-center items-center shadow-lg p-4"
+        className="bg-cover bg-center flex justify-center items-center shadow-xl p-4"
         style={{
           backgroundImage: `url(${image})`,
           height: `24rem`

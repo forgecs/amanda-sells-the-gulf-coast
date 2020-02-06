@@ -35,11 +35,11 @@
 }
 
 .about h2 {
-  @apply leading-tight text-xl font-bold text-warm-grey-200 mb-2 mt-10;
+  @apply leading-tight text-xl font-thin text-warm-grey-900 mb-2 mt-10;
 }
 
 .about h3 {
-  @apply leading-tight text-lg font-bold text-warm-grey-200 mt-8 -mb-2;
+  @apply leading-tight text-lg font-thin text-warm-grey-900 mt-8 -mb-2;
 }
 
 .about code {

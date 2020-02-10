@@ -1,8 +1,9 @@
 import React from "react";
 
+import { Link  } from "gatsby";
 
 
-function RealtorCard({ titleOne, titleTwo, button, image }) {
+function RealtorCard({ titleOne, titleTwo, button, image, to }) {
   return (
     <div className="sm:px-5 sm:w-1/2 py-10">
       <div
@@ -22,9 +23,11 @@ function RealtorCard({ titleOne, titleTwo, button, image }) {
           <div className="font-thin text-2xl leading-none tracking-wide border-b border-cyan-300 pb-10">
             {titleOne} <br /> {titleTwo}
           </div>
-          <div className="bg-warm-grey-900 font-thin text-warm-grey-050 text-xl tracking-tight px-8 py-2">
+          <Link to={`/${to}`}>
+          <div className="bg-warm-grey-900 hover:bg-warm-grey-050 font-thin text-warm-grey-050 hover:text-warm-grey-900 text-xl tracking-tight px-8 py-2">
             {button}
           </div>
+          </Link>
         </div>
       </div>
     </div>

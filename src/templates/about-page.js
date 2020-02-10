@@ -11,7 +11,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
     <section className="bg-warm-grey-050">
       <div className="max-w-xl px-4 mx-auto py-16">
         <h2 className="font-thin text-warm-grey-900 text-2xl uppercase text-2xl sm:text-4xl">{title}</h2>
-        <PageContent className="about content text-warm-grey-800" content={content} />
+        <PageContent className="about content text-warm-grey-800 mt-10" content={content} />
       </div>
     </section>
   );

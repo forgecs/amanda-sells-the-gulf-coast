@@ -60,6 +60,18 @@ const Navbar = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center">
             <Link
               className="block px-2 mt-1 sm:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
+              to="/featured-properties"
+            >
+              Properties
+            </Link>
+            <Link
+              className="block px-2 mt-1 sm:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
+              to="/testimonials"
+            >
+              Testimonials
+            </Link>
+            <Link
+              className="block px-2 mt-1 sm:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
               to="/about"
             >
               About
@@ -80,7 +92,7 @@ const Navbar = () => {
               <a
                 title="facebook"
                 className="h-8 w-8 flex justify-center items-center p-1 hover:bg-warm-grey-100 focus:bg-warm-grey-100 focus:outline-none"
-                href="https://facebook.com"
+                href="https://www.facebook.com/amandasellsthegulfcoast/"
               >
                 <img src={facebook} alt="Facebook" className="h-8 w-8" />
               </a>
@@ -89,7 +101,7 @@ const Navbar = () => {
               <a
                 title="instagram"
                 className="h-8 w-8 flex justify-center items-center p-1 hover:bg-warm-grey-100 focus:bg-warm-grey-100 focus:outline-none"
-                href="https://instagram.com"
+                href="https://www.instagram.com/amandasellsthebeach/"
               >
                 <img src={instagram} alt="Instagram" className="h-8 w-8" />
               </a>

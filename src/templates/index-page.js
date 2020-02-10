@@ -7,8 +7,7 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import RealtorCard from "../components/RealtorCard";
 
-import gulfShores from "../img/gulf-shores-1.jpg"
-import gulfBreeze from "../img/gulf-breeze-1.jpg";
+import gulfShores from "../img/gulf-shores-1.jpg";
 import gulfBreeze2 from "../img/gulf-breeze-2.jpg";
 import sunset from "../img/sunset.jpg";
 import amandaLandry from "../img/amanda-landry-1.jpg";
@@ -65,6 +64,7 @@ export const IndexPageTemplate = ({
           titleTwo="Properties"
           button="Search Now"
           image={gulfShores}
+          to="featured-properties"
         />
 
         <RealtorCard
@@ -72,6 +72,7 @@ export const IndexPageTemplate = ({
           titleTwo="Your Home"
           button="Contact Us"
           image={sunset}
+          to="contact"
         />
       </div>
 
@@ -96,17 +97,21 @@ export const IndexPageTemplate = ({
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center items-center mt-16">
-        <RealtorCard
-          titleOne="Client"
-          titleTwo="Stories"
-          button="View Here"
-          image={gulfBreeze2}
-        />
+        
+          <RealtorCard
+            titleOne="Client"
+            titleTwo="Stories"
+            button="View Here"
+            image={gulfBreeze2}
+            to="testimonials"
+          />
+        
         <RealtorCard
           titleOne="Meet"
           titleTwo="Amanda Landry"
           button="Learn More"
           image={amandaLandry}
+          to="about"
         />
       </div>
     </section>

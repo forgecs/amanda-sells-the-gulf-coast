@@ -2,7 +2,6 @@ import React from "react";
 
 import Layout from "../../components/Layout";
 import PropertyCard from "../../components/PropertyCard";
-import beachHome from "../../img/beach-home-1.jpg";
 
 export default () => (
   <Layout>

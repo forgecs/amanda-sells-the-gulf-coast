@@ -49,7 +49,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div className="bg-gray-100 flex flex-col flex-1">{children}</div>
+      <div className="bg-warm-grey-050 flex flex-col flex-1">{children}</div>
       <Footer />
     </div>
   );

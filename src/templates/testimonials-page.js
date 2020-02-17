@@ -8,7 +8,7 @@ import amandaLandry from "../img/amanda-landry-1.jpg";
 export const TestimonialsPageTemplate = ({ title, heading, testimonials }) => {
   return (
     <div>
-      <section className="bg-warm-grey-050 px-4">
+      <section className="bg-warm-grey-050 text-center px-4">
         <div className="flex flex-col items-center mt-20">
           <h1 className="font-thin text-2xl text-center leading-tight tracking-wide uppercase border-b border-cyan-300 pb-2">
             {title}
@@ -19,10 +19,9 @@ export const TestimonialsPageTemplate = ({ title, heading, testimonials }) => {
         </div>
       </section>
 
-      <section className="flex flex-col items-center pb-10 px-4">
-
-        <div className="flex flex-col bg-white max-w-xs sm:max-w-sm border-l-2 sm:border-t-0 border-cyan-300 shadow-xl p-4 mt-10">
-          <blockquote className="font-thin pb-4">
+      <section className="flex flex-col sm:flex-row justify-center items-stretch flex-wrap items-center max-w-4xl pb-10 px-4 mx-auto">
+        <div className="flex flex-col bg-white max-w-xs sm:max-w-sm border-l-2 sm:border-t-0 border-cyan-300 shadow-xl p-4 mt-10 sm:mx-5">
+          <blockquote className="font-thin italic leading-loose py-4">
             She did a great job of connecting me to the home of my dreams! A
             true pleasure to work with!
           </blockquote>
@@ -37,17 +36,16 @@ export const TestimonialsPageTemplate = ({ title, heading, testimonials }) => {
           </div>
         </div>
 
-        {testimonials.map(testimonial => 
-        <div className="flex flex-col bg-white w-full sm:w-64 border-l-2 sm:border-t-0 border-cyan-300 shadow-xl p-4 mt-10">
-          <blockquote className="font-thin pb-4">
-            {testimonial.quote}
-          </blockquote>
-          <div className="flex flex-row justify-start items-center font-thin text-warm-grey-900">
-            <div className="text-xl pl-4">-{testimonial.name}</div>
+        {testimonials.map(testimonial => (
+          <div className="flex flex-col bg-white w-full sm:max-w-sm border-l-2 sm:border-t-0 border-cyan-300 shadow-xl p-4 mt-10 sm:mx-5">
+            <blockquote className="font-thin italic leading-loose py-4">
+              {testimonial.quote}
+            </blockquote>
+            <div className="flex flex-row justify-start items-center font-thin text-warm-grey-900">
+              <div className="text-xl pl-4">- {testimonial.name}</div>
+            </div>
           </div>
-        </div>
-        )}
-
+        ))}
       </section>
     </div>
   );

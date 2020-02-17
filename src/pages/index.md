@@ -3,7 +3,7 @@ templateKey: index-page
 title: Amanda Sells The Gulf Coast
 image: /img/gulf-breeze-1.jpg
 heading: Website Heading
-subheading: Website Subheading
+subheading: 'Come Explore The Finest Property of the Alabama Gulf Coast '
 mainpitch:
   title: Main Pitch Title
   description: |

@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
+import amanda from "../img/amanda-landry-1.jpg";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -22,13 +23,18 @@ const Navbar = () => {
       aria-label="main-navigation"
     >
       <div className="sm:flex sm:justify-between sm:items-center lg:max-w-4xl mx-auto">
-        <div className="container flex items-center justify-between px-5 py-5">
+        <div className="container flex items-center justify-between px-5 py-5 sm:py-0">
+          <div className="flex items-center">
+
+          <img className="h-20 w-20 pr-1 hidden sm:block" src={amanda} alt="Amanda Landry" title="Amanda Landry" />
+
           <Link to="/" title="Amanda Sells the Gulf Coast">
             <div className="text-warm-grey-900 text-center tracking-loose leading-none uppercase border-l-2 border-cyan-500 pl-1">
               Amanda Sells <br />
               The Gulf Coast
             </div>
           </Link>
+          </div>
           <div className="sm:hidden">
             <button
               onClick={toggle}

@@ -31,8 +31,8 @@ export const IndexPageTemplate = ({
         height: `28rem`
       }}
     >
-      <div className="h-full flex flex-col justify-center items-center text-center">
-        <h1 className="text-warm-grey-700 text-2xl sm:text-3xl lg:text-5xl font-thin uppercase tracking-tight  px-10 py-2">
+      <div style={{fontFamily: `'Dancing Script', cursive`}} className="h-full flex flex-col justify-center items-center text-center">
+        <h1 className="text-warm-grey-700 text-2xl sm:text-3xl lg:text-5xl font-thin  tracking-tight  px-10 py-2">
           {title}
         </h1>
         <h3 className="text-warm-grey-700 text-lg sm:text-xl px-2 py-1 mt-5">

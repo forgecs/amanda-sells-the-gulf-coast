@@ -51,10 +51,14 @@ export default class Index extends React.Component {
                 alt="Amanda Landry"
                 title="Amanda Landry"
               />
-              <div className="flex flex-col justify-center sm:items-start items-center font-thin text-warm-grey-900 py-4 sm:px-4">
+              <div className="flex flex-col justify-center items-center text-center font-thin text-warm-grey-900 py-4 sm:px-4">
                 <div className="text-xl">Amanda Landry</div>
-                <div>111.111.1111</div>
-                <div>Email Me</div>
+                <address className="font-normal text-cyan-500 mt-1">
+                  <a className="block hover:bg-warm-grey-100 px-1" href="tel:+13375236994">(337) 523-6994</a>
+                  <a className="block hover:bg-warm-grey-100" href="mailto:amandasellsthegulfcoast@gmail.com">
+                    Email Me
+                  </a>
+                </address>
               </div>
             </div>
 

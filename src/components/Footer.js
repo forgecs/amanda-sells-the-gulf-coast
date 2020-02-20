@@ -15,7 +15,7 @@ const Footer = class extends React.Component {
               Amanda Sells <br />
               The Gulf Coast
             </div>
-            <div className="pt-2">
+            <div className="font-normal pt-2">
               <Link
                 className="border-r border-warm-grey-500 px-1 hover:bg-warm-grey-100"
                 to="/contact"
@@ -26,7 +26,7 @@ const Footer = class extends React.Component {
                 className="px-1 hover:bg-warm-grey-100"
                 href="tel:+13375236994"
               >
-                (337)523-6994
+                (337) 523-6994
               </a>
             </div>
           </div>

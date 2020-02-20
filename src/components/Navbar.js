@@ -24,7 +24,7 @@ const Navbar = () => {
       role="navigation"
       aria-label="main-navigation"
     >
-      <div className="lg:flex lg:justify-between lg:items-center lg:max-w-4xl mx-auto">
+      <div className="lg:flex lg:justify-between lg:items-center lg:max-w-6xl mx-auto">
         <div className="container flex items-center justify-between px-5 py-5 lg:py-0">
           <div className="flex items-center">
             <img

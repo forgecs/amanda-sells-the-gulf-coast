@@ -23,9 +23,9 @@ const Footer = class extends React.Component {
                   </Link>
                   <a
                     className="px-1 hover:bg-warm-grey-100"
-                    href="tel:+12519797743"
+                    href="tel:+13375236994"
                   >
-                    251-979-7743
+                    (337)523-6994
                   </a>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const Footer = class extends React.Component {
             <div>
               Built by{" "}
               <a
-                className="font-semibold text-warm-grey-700 hover:text-cyan-400 hover:bg-warm-grey-100 px-1 py-1"
+                className="font-semibold text-warm-grey-900 hover:text-warm-grey-700 py-1"
                 href="https://www.forgecs.com/"
               >
                 Forge Creative Systems

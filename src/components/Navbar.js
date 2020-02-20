@@ -5,6 +5,8 @@ import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import amanda from "../img/amanda-landry-1.jpg";
 
+import { FaPhone } from "react-icons/fa";
+
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -22,20 +24,24 @@ const Navbar = () => {
       role="navigation"
       aria-label="main-navigation"
     >
-      <div className="sm:flex sm:justify-between sm:items-center lg:max-w-4xl mx-auto">
-        <div className="container flex items-center justify-between px-5 py-5 sm:py-0">
+      <div className="lg:flex lg:justify-between lg:items-center lg:max-w-4xl mx-auto">
+        <div className="container flex items-center justify-between px-5 py-5 lg:py-0">
           <div className="flex items-center">
+            <img
+              className="h-20 w-20 pr-1 hidden lg:block"
+              src={amanda}
+              alt="Amanda Landry"
+              title="Amanda Landry"
+            />
 
-          <img className="h-20 w-20 pr-1 hidden sm:block" src={amanda} alt="Amanda Landry" title="Amanda Landry" />
-
-          <Link to="/" title="Amanda Sells the Gulf Coast">
-            <div className="text-warm-grey-900 text-center tracking-loose leading-none uppercase border-l-2 border-cyan-500 pl-1">
-              Amanda Sells <br />
-              The Gulf Coast
-            </div>
-          </Link>
+            <Link to="/" title="Amanda Sells the Gulf Coast">
+              <div className="text-warm-grey-900 text-center tracking-loose leading-none uppercase border-l-2 border-cyan-500 pl-1">
+                Amanda Sells <br />
+                The Gulf Coast
+              </div>
+            </Link>
           </div>
-          <div className="sm:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggle}
               onKeyPress={toggleKeyPress}
@@ -61,39 +67,40 @@ const Navbar = () => {
 
         <div
           id="navMenu"
-          className={`px-5 pb-4 sm:pb-0 sm:flex ${isOpen ? "block" : "hidden"}`}
+          className={`px-5 pb-4 sm:pb-0 lg:flex ${isOpen ? "block" : "hidden"}`}
         >
-          <div className="flex flex-col sm:flex-row justify-center items-center">
+          <div className="flex flex-col lg:flex-row justify-center items-center">
             <Link
-              className="block px-2 mt-1 sm:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
+              className="block px-2 mt-1 lg:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
               to="/featured-properties"
             >
               Properties
             </Link>
             <Link
-              className="block px-2 mt-1 sm:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
+              className="block px-2 mt-1 lg:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
               to="/testimonials"
             >
               Testimonials
             </Link>
             <Link
-              className="block px-2 mt-1 sm:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
+              className="block px-2 mt-1 lg:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
               to="/about"
             >
               About
             </Link>
             <Link
-              className="block px-2 mt-1 sm:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
+              className="block px-2 mt-1 lg:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
               to="/blog"
             >
               Blog
             </Link>
             <Link
-              className="block px-2 mt-1 sm:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
+              className="block px-2 mt-1 lg:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
               to="/contact"
             >
               Contact
             </Link>
+
             <div className="px-2 py-1">
               <a
                 title="facebook"
@@ -103,6 +110,7 @@ const Navbar = () => {
                 <img src={facebook} alt="Facebook" className="h-8 w-8" />
               </a>
             </div>
+
             <div className="px-2 py-1">
               <a
                 title="instagram"
@@ -110,6 +118,15 @@ const Navbar = () => {
                 href="https://www.instagram.com/amandasellsthebeach/"
               >
                 <img src={instagram} alt="Instagram" className="h-8 w-8" />
+              </a>
+            </div>
+
+            <div className="px-2 pt-1 pb-2 lg:pb-1">
+              <a
+                className="lg:px-1 h-8 w-8 text-warm-grey-900 hover:text-cyan-500"
+                href="tel:+13375236994"
+              >
+                <FaPhone size="24" />
               </a>
             </div>
           </div>

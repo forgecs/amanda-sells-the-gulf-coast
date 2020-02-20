@@ -36,5 +36,15 @@ testimonials:
       to talk  with, and professional in her real estate knowledge. She helped
       me find my current residence and I couldn't be happier. I would highly
       recommend her.
+  - name: Kelsey Neel
+    quote: >-
+      Amanda was the ideal real estate agent. She helped me find everything I
+      wanted in my first home. She had more patience then I had. She was
+      constantly encouraging whether it was encouraging me not to quite looking
+      for the perfect house or it was encouraging me that we would find the
+      perfect house. Last but not least she was quick! She was quick to respond
+      to me and all my needs and she was quick schedule any house I wanted to
+      see!! She was beyond helpful throughout the entire process and now she is
+      currently helping me look for my second house.
 ---
 

@@ -9,7 +9,7 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer className="text-cyan-400 bg-warm-grey-050 font-thin flex flex-col">
-        <div className=" flex flex-col sm:flex-row justify-around items-center pb-5 px-16 ">
+        <div className="flex flex-col sm:flex-row justify-around items-center pb-5 sm:px-16 ">
           <div className="flex flex-col justify-center items-center">
             <div className="text-warm-grey-900 text-center tracking-loose leading-none uppercase border-l-2 border-cyan-500 pl-1">
               Amanda Sells <br />

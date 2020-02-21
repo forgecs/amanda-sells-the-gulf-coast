@@ -100,6 +100,12 @@ const Navbar = () => {
             >
               Contact
             </Link>
+            <Link
+              className="block px-2 mt-1 lg:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
+              to="/contact"
+            >
+              Resources
+            </Link>
 
             <div className="px-2 py-1">
               <a

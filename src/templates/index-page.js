@@ -31,11 +31,14 @@ export const IndexPageTemplate = ({
         height: `28rem`
       }}
     >
-      <div style={{fontFamily: `'Dancing Script', cursive`}} className="h-full flex flex-col justify-center items-center text-center">
-        <h1 className="text-warm-grey-700 text-2xl sm:text-3xl lg:text-5xl font-thin  tracking-tight  px-10 py-2">
+      <div
+        style={{ fontFamily: `'Dancing Script', cursive` }}
+        className="h-full flex flex-col justify-center items-center max-w-xs lg:max-w-md text-center mx-auto"
+      >
+        <h1 className="text-warm-grey-700 text-5xl lg:text-6xl tracking-tight px-10 py-2">
           {title}
         </h1>
-        <h3 className="text-warm-grey-700 text-lg sm:text-xl px-2 py-1 mt-5">
+        <h3 className="text-warm-grey-700 text-2xl lg:text-3xl px-2 py-1 mt-5">
           {subheading}
         </h3>
       </div>
@@ -80,7 +83,7 @@ export const IndexPageTemplate = ({
         <h3 className="font-thin text-2xl text-center leading-tight tracking-wide uppercase border-b border-cyan-300 pb-2">
           Featured <br /> Properties
         </h3>
-        <Features gridItems={intro.blurbs} />
+        <Features gridItems={intro.properties} />
       </div>
 
       <div className="flex flex-col items-center mt-20">
@@ -97,15 +100,14 @@ export const IndexPageTemplate = ({
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center items-center mt-16">
-        
-          <RealtorCard
-            titleOne="Client"
-            titleTwo="Stories"
-            button="View Here"
-            image={gulfBreeze2}
-            to="testimonials"
-          />
-        
+        <RealtorCard
+          titleOne="Client"
+          titleTwo="Stories"
+          button="View Here"
+          image={gulfBreeze2}
+          to="testimonials"
+        />
+
         <RealtorCard
           titleOne="Meet"
           titleTwo="Amanda Landry"
@@ -126,7 +128,7 @@ IndexPageTemplate.propTypes = {
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array
+    properties: PropTypes.array
   })
 };
 
@@ -178,15 +180,18 @@ export const pageQuery = graphql`
         }
         description
         intro {
-          blurbs {
+          properties {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 375, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
-            text
+            address
+            beds
+            baths
+            price
           }
           heading
           description

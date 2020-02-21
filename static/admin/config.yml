@@ -36,7 +36,7 @@ collections:
     label: "Pages"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Home Page"
         name: "index"
         fields:
           - {
@@ -69,13 +69,27 @@ collections:
                   { label: Heading, name: heading, widget: string },
                   { label: Description, name: description, widget: text },
                   {
-                    label: Blurbs,
-                    name: blurbs,
+                    label: Properties,
+                    name: properties,
                     widget: list,
                     fields:
                       [
                         { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
+                        { 
+                          label: Address, 
+                          name: address, 
+                          widget: string,
+                          # fields: 
+                          # [
+                          #   {label: Street, name: street, widget: string },
+                          #   {label: Town, name: town, widget: string },
+                          #   {label: State, name: state, widget: string },
+                          # ] 
+                          
+                          },
+                        { label: Beds, name: beds, widget: number },
+                        { label: Baths, name: baths, widget: number },
+                        { label: Price, name: price, widget: number },
                       ],
                   },
                 ],

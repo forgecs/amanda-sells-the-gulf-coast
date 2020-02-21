@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 
-import amandaLandry from "../img/amanda-landry-1.jpg";
-
 export const TestimonialsPageTemplate = ({ title, heading, testimonials }) => {
   return (
     <div>
@@ -20,8 +18,6 @@ export const TestimonialsPageTemplate = ({ title, heading, testimonials }) => {
       </section>
 
       <section className="flex flex-col sm:flex-row justify-center items-stretch flex-wrap items-center max-w-4xl pb-10 px-4 mx-auto">
-        
-
         {testimonials.map(testimonial => (
           <div className="flex flex-col bg-white w-full sm:max-w-sm border-l-2 sm:border-t-0 border-cyan-300 shadow-xl p-4 mt-10 sm:mx-5">
             <blockquote className="font-thin italic leading-loose py-4">

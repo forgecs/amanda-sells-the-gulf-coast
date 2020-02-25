@@ -14,4 +14,6 @@ Contact her today so you can start the journey to finding your new piece of para
 
 ![Krewe of the Island Mardi Gras Ball 2020](/img/ball.jpg)
 
+![Puppies & Pints fundraiser for Third Coast Animal Rescue](/img/pupspintsgroup.jpg)
+
 <!--EndFragment-->

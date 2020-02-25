@@ -12,6 +12,6 @@ When Amanda is not selling houses, you can find her being a social butterfly! Sh
 
 Contact her today so you can start the journey to finding your new piece of paradise!
 
-<!--EndFragment-->
-
 ![Krewe of the Island Mardi Gras Ball 2020](/img/ball.jpg)
+
+<!--EndFragment-->

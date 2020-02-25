@@ -3,47 +3,43 @@ templateKey: index-page
 title: Amanda Sells The Gulf Coast
 image: /img/gulf-breeze-1.jpg
 heading: Website Heading
-subheading: "Come Explore The Finest Property of the Alabama Gulf Coast "
+subheading: 'Come Explore The Finest Property on the Alabama & Florida Gulf Coast '
 mainpitch:
-  title: Main Pitch Title
-  description: |
-    Main Pitch Description
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  title: Move with the waves
+  description: >-
+
+    Whether you're looking for a beach getaway for the family, your retirement
+    home, an investment property, or your first home- I can help! Contact me
+    today!
+description: '----'
 intro:
-  properties:
-    - image: /img/beach-home-4.jpg
-      address: 1234 West Beach Gulf Shores, AL
-        # - street: 1234 West Beach
-        #   town: Gulf Shores
-        #   state: AL
-      beds: 1
-      baths: 1
-      price: 100000
-    - image: /img/beach-home-2.jpg
-      address: 1234 West Beach Gulf Shores, AL
-      beds: 2
-      baths: 1
-      price: 200000
-    - image: /img/beach-home-3.jpg
-      address: 1234 West Beach Gulf Shores, AL
-      beds: 3
-      baths: 2
-      price: 300000
-    - image: /img/beach-home-1.jpg
-      address: 1234 West Beach Gulf Shores, AL
-      beds: 4
-      baths: 2
-      price: 500000
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+  properties:
+    - address: '1234 West Beach Gulf Shores, AL'
+      baths: 1
+      beds: 1
+      image: /img/beach-home-4.jpg
+      price: 100000
+    - address: '1234 West Beach Gulf Shores, AL'
+      baths: 1
+      beds: 2
+      image: /img/beach-home-2.jpg
+      price: 200000
+    - address: '1234 West Beach Gulf Shores, AL'
+      baths: 2
+      beds: 3
+      image: /img/beach-home-3.jpg
+      price: 300000
+    - address: '1234 West Beach Gulf Shores, AL'
+      baths: 2
+      beds: 4
+      image: /img/beach-home-1.jpg
+      price: 500000
 main:
   heading: Great coffee with no compromises
   description: >
@@ -61,3 +57,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+

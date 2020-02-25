@@ -12,8 +12,10 @@ When Amanda is not selling houses, you can find her being a social butterfly! Sh
 
 Contact her today so you can start the journey to finding your new piece of paradise!
 
-![Krewe of the Island Mardi Gras Ball 2020](/img/ball.jpg)
+![Volunteering at National Shrimp Festival](/img/IMG_3786.JPG "Volunteering at National Shrimp Festival")
 
-![Puppies & Pints fundraiser for Third Coast Animal Rescue](/img/pupspintsgroup.jpg)
+![Krewe of the Island Mardi Gras Ball 2020](/img/ball.jpg "Krewe of the Island Mardi Gras Ball 2020")
+
+![Puppies & Pints fundraiser for Third Coast Animal Rescue](/img/pupspintsgroup.jpg "Puppies & Pints fundraiser for Third Coast Animal Rescue")
 
 <!--EndFragment-->

@@ -96,6 +96,7 @@ export const PropertyTemplate = ({
 };
 
 PropertyTemplate.propTypes = {
+  featuredImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
@@ -112,7 +113,6 @@ const Property = ({ data }) => {
   return (
     <Layout>
       <PropertyTemplate
-        description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Properties">
             <title>{`${post.frontmatter.address}`}</title>
@@ -150,8 +150,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-
-        description
         tags
 
         address

@@ -44,19 +44,18 @@ collections:
           widget: "hidden",
           default: "property",
         }
-      - { label: "Image", name: "image", widget: image },
-      - { label: "Address", name: "address", widget: "string" },             
-      - { label: "Beds", name: "beds", widget: "number" },
-      - { label: "Baths", name: "baths", widget: "number" },
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Address", name: "address", widget: "string" }
+      - { label: "Beds", name: "beds", widget: "number" }
+      - { label: "Baths", name: "baths", widget: "number" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Price", name: "price", widget: "number" },
-        # fields: 
+      - { label: "Price", name: "price", widget: "number" }
+        # fields:
         # [
         #   {label: Street, name: street, widget: string },
         #   {label: Town, name: town, widget: string },
         #   {label: State, name: state, widget: string },
-        # ] 
-
+        # ]
 
   - name: "pages"
     label: "Pages"
@@ -94,30 +93,20 @@ collections:
                 [
                   { label: Heading, name: heading, widget: string },
                   { label: Description, name: description, widget: text },
-                  {
-                    label: Properties,
-                    name: properties,
-                    widget: list,
-                    fields:
-                      [
+                  { label: Properties, name: properties, widget: list, fields: [
                         { label: Image, name: image, widget: image },
-                        { 
-                          label: Address, 
-                          name: address, 
-                          widget: string,
-                          # fields: 
-                          # [
-                          #   {label: Street, name: street, widget: string },
-                          #   {label: Town, name: town, widget: string },
-                          #   {label: State, name: state, widget: string },
-                          # ] 
-                          
-                          },
+                        { label: Address, name: address, widget: string },
+                        # fields:
+                        # [
+                        #   {label: Street, name: street, widget: string },
+                        #   {label: Town, name: town, widget: string },
+                        #   {label: State, name: state, widget: string },
+                        # ]
+
                         { label: Beds, name: beds, widget: number },
                         { label: Baths, name: baths, widget: number },
                         { label: Price, name: price, widget: number },
-                      ],
-                  },
+                      ] },
                 ],
             }
           - {

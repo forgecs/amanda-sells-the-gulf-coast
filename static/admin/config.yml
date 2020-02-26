@@ -45,7 +45,7 @@ collections:
           widget: "hidden",
           default: "property",
         }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - { label: "Address", name: "address", widget: "string" }
       - { label: "Beds", name: "beds", widget: "number" }
       - { label: "Baths", name: "baths", widget: "number" }

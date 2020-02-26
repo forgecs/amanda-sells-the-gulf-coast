@@ -1,6 +1,6 @@
 ---
 templateKey: property
-image: /img/beach-home-5.jpg
+featuredImage: /img/beach-home-5.jpg
 address: '2222 West St Orange Beach, AL 55555'
 beds: 5
 baths: 3

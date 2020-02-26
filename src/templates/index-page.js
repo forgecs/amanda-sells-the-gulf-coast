@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
+// import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import PropertyRoll from "../components/PropertyRoll";
 import RealtorCard from "../components/RealtorCard";
 
 import gulfShores from "../img/gulf-shores-1.jpg";
@@ -45,7 +46,7 @@ export const IndexPageTemplate = ({
     </section>
 
     <section className="max-w-4xl bg-warm-grey-050 py-16 mx-auto">
-      <div className="flex flex-col justify-center items-center px-4">
+      <div className="flex flex-col justify-center items-center text-center px-4">
         <h1 className="font-thin text-warm-grey-900 text-2xl uppercase">
           {mainpitch.title}
         </h1>
@@ -63,11 +64,11 @@ export const IndexPageTemplate = ({
 
       <div className="flex flex-col sm:flex-row justify-center items-center mt-16">
         <RealtorCard
-          titleOne="Featured"
+          titleOne="Browse"
           titleTwo="Properties"
           button="Search Now"
           image={gulfShores}
-          to="featured-properties"
+          to="properties"
         />
 
         <RealtorCard
@@ -83,7 +84,8 @@ export const IndexPageTemplate = ({
         <h3 className="font-thin text-2xl text-center leading-tight tracking-wide uppercase border-b border-cyan-300 pb-2">
           Featured <br /> Properties
         </h3>
-        <Features gridItems={intro.properties} />
+        <PropertyRoll />
+        {/* <Features gridItems={intro.properties} /> */}
       </div>
 
       <div className="flex flex-col items-center mt-20">

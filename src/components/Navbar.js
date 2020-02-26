@@ -72,7 +72,7 @@ const Navbar = () => {
           <div className="flex flex-col lg:flex-row justify-center items-center">
             <Link
               className="block px-2 mt-1 lg:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
-              to="/featured-properties"
+              to="/properties"
             >
               Properties
             </Link>

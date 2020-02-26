@@ -1,11 +1,12 @@
 import React from "react";
+// import { Link } from "gatsby";
 
 import beachHome from "../img/beach-home-1.jpg";
+// import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-function PropertyCard() {
+function PropertyCard({ address, baths, beds, image, price, slug }) {
   return (
     <div className="bg-white shadow-lg overflow-hidden max-w-xs relative">
-      
       <svg
         viewBox="0 0 24 24"
         className="h-8 w-8 fill-current text-warm-grey-050 hover:text-cyan-500 absolute top-0 right-0"
@@ -18,6 +19,17 @@ function PropertyCard() {
         alt="Beach Home"
       />
 
+      {/* {image ? (
+        <div>
+          <PreviewCompatibleImage
+            imageInfo={{
+              image: image,
+              alt: `featured image thumbnail for post`
+            }}
+          />
+        </div>
+      ) : null} */}
+
       <div className="p-6 border-b-2 border-cyan-400">
         <div className="flex items-baseline">
           <span className="inline-block bg-cyan-200 text-cyan-800 text-xs uppercase tracking-wide rounded-full px-2 ">
@@ -25,15 +37,14 @@ function PropertyCard() {
           </span>
           <div className="font-thin text-warm-grey-800 text-xs tracking-wide uppercase ml-2">
             {" "}
-            3 beds &bull; 2 baths
+            {beds} beds &bull; {baths} baths
           </div>
         </div>
-        <h4 className="text-lg mt-1">1234 West Beach Blvd</h4>
-        <div className="text-warm-grey-600 text-sm tracking-wide uppercase">
-          {" "}
-          Gulf Shores, AL
-        </div>
-        <div className="font-thin mt-1">$350,000</div>
+        {/* <Link className="hover:text-cyan-500" to={slug}>
+          <h4 className="text-lg mt-1">{address}</h4>
+        </Link> */}
+        <div className="font-thin mt-1">${price}</div>
+        <div className="font-thin mt-1">{slug}</div>
       </div>
     </div>
   );

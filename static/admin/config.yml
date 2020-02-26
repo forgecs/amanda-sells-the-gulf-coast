@@ -36,6 +36,7 @@ collections:
     label: "Property"
     folder: "src/pages/properties"
     create: true
+    identifier_field: address
     slug: "{{slug}}"
     fields:
       - {

@@ -1,7 +1,7 @@
 ---
 templateKey: property
 featuredImage: /img/Front of building.jpg
-address: 527 Beach Club Trail 902C GulfS hores AL 36542
+address: 527 Beach Club Trail 902C Gulf Shores AL 36542
 beds: 1
 baths: 1
 description: >-

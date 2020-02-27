@@ -7,7 +7,7 @@ subheading: 'Come Explore The Finest Property on the Alabama & Florida Gulf Coas
 mainpitch:
   title: Move with the waves
   description: >-
-    From the perfect beach getaway to your first home- I can help! Contact me
+    From your first home to the perfect beach getaway- I can help! Contact me
     today!
 description: '----'
 intro:

@@ -215,7 +215,7 @@ collections:
                   name: "category", 
                   widget: "list", 
                   fields: 
-                    - { label: "Name", name: "name", widget: "string" }    
+                    - { label: "Name", name: "name", widget: "string" },    
                     - { label: "Resource",
                         name: "resource",
                         widget: "list",

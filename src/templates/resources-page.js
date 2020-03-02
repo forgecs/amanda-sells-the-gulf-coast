@@ -6,7 +6,6 @@ import Layout from "../components/Layout";
 export const ResourcesPageTemplate = ({
   title,
   heading,
-  schools,
   resources
 }) => {
   return (
@@ -21,14 +20,6 @@ export const ResourcesPageTemplate = ({
           </h2>
         </div>
       </section>
-
-      {/* <section className="flex flex-col sm:flex-row justify-center items-stretch flex-wrap items-center max-w-4xl pb-10 px-4 mx-auto">
-        {schools.map(school => (
-          <div className="flex flex-col bg-white w-full sm:max-w-sm border-l-2 sm:border-t-0 border-cyan-300 shadow-xl p-4 mt-10 sm:mx-5">
-            <a href={school.link}>{school.name}</a>
-          </div>
-        ))}
-      </section> */}
 
       <section className="max-w-4xl pb-10 px-4 mx-auto">
         {resources.map(r => (
@@ -67,8 +58,6 @@ const ResourcesPage = ({ data }) => {
       <ResourcesPageTemplate
         title={post.frontmatter.title}
         heading={post.frontmatter.heading}
-        testimonials={post.frontmatter.testimonials}
-        schools={post.frontmatter.schools}
         resources={post.frontmatter.resources}
       />
     </Layout>
@@ -88,14 +77,6 @@ export const resourcesPageQuery = graphql`
       frontmatter {
         title
         heading
-        testimonials {
-          quote
-          name
-        }
-        schools {
-          name
-          link
-        }
         resources {
           category {
             name

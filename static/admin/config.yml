@@ -210,12 +210,11 @@ collections:
             name: "resources"
             widget: "list"
             fields:
-              -  
-                  { label: "Category", 
-                  name: "category", 
-                  widget: "list", 
-                  fields: 
-                    - { label: "Name", name: "name", widget: "string" },    
+              - label: "Category" 
+                name: "category"
+                widget: "list" 
+                fields: 
+                    - { label: "Name", name: "name", widget: "string" }
                     - { label: "Resource",
                         name: "resource",
                         widget: "list",
@@ -223,8 +222,8 @@ collections:
                           - { label: "Name", name: "name", widget: "string"}
                           - { label: "Link", name: "link", widget: "string"}
                       }    
-                  }
-              
+                  
+
       
       # - file: "src/pages/products/index.md"
       #   label: "Products Page"

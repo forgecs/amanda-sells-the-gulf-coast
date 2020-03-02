@@ -102,7 +102,7 @@ const Navbar = () => {
             </Link>
             <Link
               className="block px-2 mt-1 lg:mt-0 hover:bg-warm-grey-100 focus:outline-none focus:bg-warm-grey-100"
-              to="/contact"
+              to="/resources"
             >
               Resources
             </Link>

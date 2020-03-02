@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
 import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
+// import { kebabCase } from "lodash";
 
 import Layout from "../components/Layout";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 export const PropertyTemplate = ({
   description,
@@ -97,7 +96,6 @@ export const PropertyTemplate = ({
 
 PropertyTemplate.propTypes = {
   featuredImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
   address: PropTypes.string,
@@ -168,4 +166,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-

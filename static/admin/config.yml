@@ -181,6 +181,51 @@ collections:
             fields:
               - { label: "Quote", name: "quote", widget: "text" }
               - { label: "Name", name: "name", widget: "string" }
+
+      - file: "src/pages/resources/index.md"
+        label: "Resources"
+        name: "resources"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "resources-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+          - label: "Schools"
+            name: "schools"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+          - label: "Resources"
+            name: "resources"
+            widget: "list"
+            fields:
+              -  
+                  { label: "Category", 
+                  name: "category", 
+                  widget: "list", 
+                  fields: 
+                    - { label: "Name", name: "name", widget: "string" }    
+                    - { label: "Resource",
+                        name: "resource",
+                        widget: "list",
+                        fields: 
+                          - { label: "Name", name: "name", widget: "string"}
+                          - { label: "Link", name: "link", widget: "string"}
+                      }    
+                  }
+              
+      
       # - file: "src/pages/products/index.md"
       #   label: "Products Page"
       #   name: "products"

@@ -215,13 +215,13 @@ collections:
                 widget: "list" 
                 fields: 
                     - { label: "Name", name: "name", widget: "string" }
-                    - { label: "Resource",
-                        name: "resource",
-                        widget: "list",
-                        fields: 
-                          - { label: "Name", name: "name", widget: "string"}
-                          - { label: "Link", name: "link", widget: "string"}
-                      }    
+                    - label: "Resource"
+                      name: "resource"
+                      widget: "list"
+                      fields: 
+                        - { label: "Name", name: "name", widget: "string"}
+                        - { label: "Link", name: "link", widget: "string"}
+                          
                   
 
       
